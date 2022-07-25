@@ -27,3 +27,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/formation' , FormationController::class );
 Route::resource('/module' , ModuleController::class );
+Route::resource('/chapitre' , ModuleController::class );

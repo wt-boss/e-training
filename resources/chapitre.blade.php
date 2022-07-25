@@ -13,7 +13,7 @@
 <ul class="list-group list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
       <div class="ms-2 me-auto">
-        <h1 class="fw-bold h-25">Liste des Chapitres<h1>
+        <h1 class="fw-bold h-25">{{$chapitre->name}}<h1>
       </div>
     </li>
 
