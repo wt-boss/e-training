@@ -17,8 +17,8 @@ class FormationFactory extends Factory
     public function definition()
     {
         return [
-            'name'=>fake()->sentence(3 , true),
-            'description'=>fake()->paragraph(1 , true),
+            'name'=>'Nom de la formation',
+            'description'=>'Decouvrez les bases de la programation a tout les niveaux , beneficier du meilleure.'
         ];
     }
 }

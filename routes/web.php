@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\ChapitreController;
 use App\Http\Controllers\Formation;
 use App\Http\Controllers\FormationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +20,14 @@ use App\Http\Controllers\ModuleController;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/formation' , FormationController::class );
 Route::resource('/module' , ModuleController::class );
-Route::resource('/chapitre' , ModuleController::class );
+Route::resource('/chapitre' , ChapitreController::class);
+Route::get('/test', [TestController::class , 'index']);

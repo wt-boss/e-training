@@ -1,0 +1,84 @@
+:root{
+    --main-color:#384496;
+    --second-color:#E13B5A;
+}
+
+
+
+.btn-contact{
+
+    
+    border: var(--main-color) 2px solid !important;
+}
+
+.btn-contact:hover{
+    background-color:var(--main-color) !important ;
+    color: white  !important;
+    
+}
+
+.btn-action{
+    border: var(--main-color) 2px solid !important;
+}
+
+.btn-action:hover{
+    background-color:var(--main-color) !important ;
+    color: white  !important;
+    
+}
+
+.btn-register{
+    border: var(--second-color) 2px solid !important;
+}
+
+.btn-register:hover{
+    background-color:var(--second-color) !important ;
+    color: white  !important;
+    
+}
+.btn-login:hover{
+  
+    color: white  !important;
+    
+}
+.img-formations{
+    display: block !important;
+    width: 300px !important;
+}
+
+.nav-logo{
+    display: block !important;
+    width: 100px !important;
+}
+
+.focused{
+    color: #E13B5A !important;
+    font-size: 1000px !important;
+
+}
+
+.h1{
+    color: #E13B5A !important;   
+}
+
+.bgm{
+
+    background-color:var(--main-color) !important ;
+}
+
+.bgs{
+    
+    background-color:var(--second-color) !important ;
+}
+
+.cm{
+    color: var(--main-color);
+}
+
+.cs{
+    color: var(--second-color);
+}
+
+.cw{
+    color: white;
+}

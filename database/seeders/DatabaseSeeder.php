@@ -30,8 +30,33 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $Formation=Formation::factory(5)->create()->each(function($Formation 
-            ){
+        Formation::insert([
+            'name'=>'HTML/CSS',
+            'description'=>'Decouvrez les bases de la programation a tout les niveaux , beneficier du meilleure',
+
+        ]);
+
+        Formation::insert([
+            'name'=>'.Net',
+            'description'=>'Decouvrez les bases de la programation a tout les niveaux , beneficier du meilleure',
+        ]);
+
+        Formation::insert([
+            'name'=>'React',
+            'description'=>'Decouvrez les bases de la programation a tout les niveaux , beneficier du meilleure',
+
+        ]);
+
+        Formation::insert([
+            'name'=>'Vue Js',
+            'description'=>'Decouvrez les bases de la programation a tout les niveaux , beneficier du meilleure',
+
+        ]);
+        
+        Formation::factory(5)->create();
+
+        $Formation=Formation::all()->each(function($Formation )
+        {
 
             $module= Module::factory(5)->make();
 

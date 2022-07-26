@@ -17,8 +17,8 @@ class LeconFactory extends Factory
     public function definition()
     {
         return [
-            'name'=>$this->faker->sentence(3 , false),
-            'content'=>$this->faker->paragraph(3),
+            'name'=>'Nom de la leçon',
+            'content'=>$this->faker->paragraph(15 , true).'\n'.$this->faker->paragraph(10 , true).'\n'.$this->faker->paragraph(10 , true),
 
         ];
     }
