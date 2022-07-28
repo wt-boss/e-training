@@ -101,6 +101,26 @@ use App\Models\Formation;
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+
+                                <a class="dropdown-item" href="{{ route('compte.index') }}"
+                                    onclick="event.preventDefault();
+                                                  document.getElementById('compte').submit();">
+                                     {{ __('Compte') }}
+                                 </a>
+
+                                 <form id="compte" action="{{ route('compte.index') }}" method="GET" class="d-none">
+                                     @csrf
+                                 </form>
+                                
+                                <a class="dropdown-item" href="{{ route('dashboard.index') }}"
+                                onclick="event.preventDefault();
+                                              document.getElementById('dashboard').submit();">
+                                 {{ __('Dashboard') }}
+                             </a>
+
+                             <form id="test" action="{{ route('dashboard.index') }}" method="GET" class="d-none">
+                                 @csrf
+                             </form>
                                 </div>
                             </li>
                         @endguest

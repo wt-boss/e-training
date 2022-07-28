@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ChapitreController;
+use App\Http\Controllers\Compte;
+use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Formation;
 use App\Http\Controllers\FormationController;
 use Illuminate\Support\Facades\Auth;
@@ -30,4 +32,6 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::resource('/formation' , FormationController::class );
 Route::resource('/module' , ModuleController::class );
 Route::resource('/chapitre' , ChapitreController::class);
-Route::get('/test', [TestController::class , 'index']);
+Route::get('/test', [TestController::class , 'index'])->name('test');
+Route::resource('/compte' , Compte::class);
+Route::resource('/dashboard' , Dashboard::class);
